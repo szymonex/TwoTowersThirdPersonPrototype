@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformController : MonoBehaviour
+public class MovingPlatform : MonoBehaviour
 {
     [SerializeField] private float speed = 0.8f;
     [SerializeField] private Transform startPointObj;
@@ -22,10 +20,10 @@ public class PlatformController : MonoBehaviour
 
     void Update()
     {
-        Move();
+        MovePlatform();
     }
 
-    private void Move()
+    private void MovePlatform()
     {
         currentPosition = Vector3.Lerp(startPoint, endPoint, Mathf.PingPong(Time.time * speed, 1));
         transform.position = currentPosition;

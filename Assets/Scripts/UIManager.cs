@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -40,6 +38,4 @@ public class UIManager : MonoBehaviour
     {
         gameTimeCounterText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
     }
-
-
 }

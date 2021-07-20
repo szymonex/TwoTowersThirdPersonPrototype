@@ -104,7 +104,6 @@ GameObject:
   - component: {fileID: 3012939741064702080}
   - component: {fileID: 8778688095305483066}
   - component: {fileID: 269836720178301518}
-  - component: {fileID: 7299026447699049953}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -177,20 +176,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7299026447699049953
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5697260231419867932}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &6084033973360219717
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  jumpForce: 15
+  jumpForce: 17
   gravityForce: 33
   checkDistance: 0.25
   groundCheck: {fileID: 4666583847785942319}
@@ -347,7 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 279910406470016969, guid: 7c231e7fd6a41224dbae4f952f840cf5, type: 3}
   gunBarrel: {fileID: 3332958852776217755}
-  bulletForce: 16000
+  bulletForce: 2000
   fireRate: 0.5
   lastShot: 0
 --- !u!54 &1763531161

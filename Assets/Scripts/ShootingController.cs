@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ShootingController : MonoBehaviour
@@ -9,11 +7,6 @@ public class ShootingController : MonoBehaviour
     [SerializeField] private float bulletForce;
     [SerializeField] private float fireRate = 0.5f;
     [SerializeField] private float lastShot = 0f;
-
-    void Start()
-    {
-        
-    }
 
     private void Update()
     {

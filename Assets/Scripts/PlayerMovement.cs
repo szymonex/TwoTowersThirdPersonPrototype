@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -23,14 +21,27 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.Locked;
         rb.useGravity = false;
     }
 
     private void FixedUpdate()
     {
-        Cursor.lockState = CursorLockMode.Locked;
         MyGravity();
+        Move();
+    }
 
+    private void Update()
+    {
+        canJump = Physics.CheckSphere(groundCheck.position, checkDistance, groundMask);
+        if(Input.GetButtonDown("Jump"))
+        {
+            Jump();
+        }
+    }
+
+    private void Move()
+    {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
@@ -47,18 +58,9 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = new Vector3(MoveDirection.x * speed, rb.velocity.y, MoveDirection.z * speed);
 
-        if(MoveDirection != Vector3.zero)
+        if (MoveDirection != Vector3.zero)
         {
             playerMesh.rotation = Quaternion.LookRotation(MoveDirection);
-        }
-    }
-
-    private void Update()
-    {
-        canJump = Physics.CheckSphere(groundCheck.position, checkDistance, groundMask);
-        if(Input.GetButtonDown("Jump"))
-        {
-            Jump();
         }
     }
 

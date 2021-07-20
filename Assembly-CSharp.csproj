@@ -60,16 +60,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlatformInteractions.cs" />
-    <Compile Include="Assets\Scripts\ThirdPersonMovement.cs" />
     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
-    <Compile Include="Assets\Scripts\PlatformController.cs" />
-    <Compile Include="Assets\Scripts\PlayerInteractions.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\ShootingController.cs" />
     <Compile Include="Assets\Scripts\DestroyingBullet.cs" />
-    <Compile Include="Assets\Scripts\ShootingTargetController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\ShootingTargetController.cs" />
+    <Compile Include="Assets\Scripts\ShootingController.cs" />
+    <Compile Include="Assets\Scripts\TrapController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
