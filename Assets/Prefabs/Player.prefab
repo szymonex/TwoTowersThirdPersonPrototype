@@ -310,7 +310,7 @@ MonoBehaviour:
   speed: 15
   jumpForce: 17
   gravityForce: 33
-  checkDistance: 0.25
+  checkDistance: 0.5
   groundCheck: {fileID: 4666583847785942319}
   groundMask:
     serializedVersion: 2
@@ -332,8 +332,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 279910406470016969, guid: 7c231e7fd6a41224dbae4f952f840cf5, type: 3}
   gunBarrel: {fileID: 3332958852776217755}
-  bulletForce: 2000
-  fireRate: 0.5
+  bulletForce: 9000
+  fireRate: 0.7
   lastShot: 0
 --- !u!54 &1763531161
 Rigidbody:
